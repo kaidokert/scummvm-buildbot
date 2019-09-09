@@ -4,3 +4,16 @@ services:
   web:
     ports:
       - "80:8000"
+
+  debian-x86:
+    environment:
+      WORKER_HOST: build1
+
+  debian-x86_64:
+    environment:
+      WORKER_HOST: build2
+
+  android:
+    environment:
+      WORKER_HOST: build3
+
